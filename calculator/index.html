@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    <title>Travel eSIM Data Calculator | Estimate Your Data Usage</title>
+    <meta name="description" content="Not sure how much data you need for your trip? Use our free eSIM data calculator to accurately estimate your network needs for global travel.">
+    <meta name="keywords" content="[eSIM calculator, travel data usage, how much data do I need, travel eSIM]">
+    <meta name="robots" content="index, follow">
+
+    
+    <link rel="canonical" href="https://www.roamiapp.com/calculator/" />
+
+    
+    
+        <link rel="alternate" hreflang="en" href="https://www.roamiapp.com/calculator/">
+        <link rel="alternate" hreflang="x-default" href="https://www.roamiapp.com/calculator/">
+    
+
+    
+    <meta property="og:title" content="Travel eSIM Data Calculator | Estimate Your Data Usage">
+    <meta property="og:description" content="Not sure how much data you need for your trip? Use our free eSIM data calculator to accurately estimate your network needs for global travel.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.roamiapp.com/calculator/">
+    <meta property="og:site_name" content="Roami eSIM">
+    <meta property="og:image" content="https://www.roamiapp.com/images/seo/calculator-og-image.jpg">
+
+    
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Travel eSIM Data Calculator | Estimate Your Data Usage">
+    <meta name="twitter:description" content="Not sure how much data you need for your trip? Use our free eSIM data calculator to accurately estimate your network needs for global travel.">
+    <meta name="twitter:image" content="https://www.roamiapp.com/images/seo/calculator-og-image.jpg">
+    
+    
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        
+        
+          
+            
+            {
+              "@type": "Question",
+              "name": "How much data does Google Maps use?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Google Maps uses approximately 5-10 MB per hour of active navigation. We highly recommend downloading offline maps over Wi-Fi before you head out to save data."
+              }
+            }
+            
+          
+            ,
+            {
+              "@type": "Question",
+              "name": "Is 1GB of data enough for a 7-day trip?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "1GB is generally sufficient for light usage, such as occasional WhatsApp messaging, checking emails, and brief map searches. However, if you plan to use Instagram, TikTok, or stream videos, we recommend at least 3GB to 5GB."
+              }
+            }
+            
+          
+        
+      ]
+    }
+    </script>
+    
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: { extend: { fontFamily: { 'sans': ['Inter','system-ui','sans-serif'] } } }
+        }
+    </script>
+    <style>
+        body { font-family: 'Inter', system-ui, sans-serif; }
+        .fade-in { animation: fadeIn 0.5s ease-in; }
+        @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+        .no-scrollbar::-webkit-scrollbar { display: none; }
+        .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900 antialiased flex flex-col min-h-screen">
+
+
+<nav class="w-full bg-white border-b border-slate-200 sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between items-center h-16">
+            
+            <a href="/" class="text-2xl font-extrabold text-blue-600 tracking-tight">Roami</a>
+            
+            
+            <div class="hidden md:flex items-center gap-7">
+                
+                
+                <a href="/" class="flex items-start text-slate-500 hover:text-slate-900 text-sm font-medium transition-colors">
+                    <span>Home</span>
+                    
+                    
+                    
+                </a> 
+                
+                
+                <a href="/Plans" class="flex items-start text-slate-500 hover:text-slate-900 text-sm font-medium transition-colors">
+                    <span>Plans</span>
+                    
+                    
+                    
+                    <span class="ml-0.5 -mt-1.5 bg-red-500 text-white text-xs font-bold px-1.5 py-0.5 rounded-full shadow-sm scale-75 origin-bottom-left">
+                        HOT
+                    </span>
+                    
+                </a> 
+                
+                
+                <a href="/compatibility" class="flex items-start text-slate-500 hover:text-slate-900 text-sm font-medium transition-colors">
+                    <span>eSIM Compatibility</span>
+                    
+                    
+                    
+                </a> 
+                
+                
+                <a href="/about-us" class="flex items-start text-slate-500 hover:text-slate-900 text-sm font-medium transition-colors">
+                    <span>About Us</span>
+                    
+                    
+                    
+                </a> 
+                
+                
+                <a href="/faq" class="flex items-start text-slate-500 hover:text-slate-900 text-sm font-medium transition-colors">
+                    <span>FAQ</span>
+                    
+                    
+                    
+                </a> 
+                
+            </div>
+            
+            
+            <button id="mobile-menu-btn" class="md:hidden p-2 rounded-lg hover:bg-slate-100" aria-label="Toggle menu">
+                <i data-lucide="menu" class="w-5 h-5 text-slate-700"></i>
+            </button>
+        </div>
+    </div>
+    
+    
+    <div id="mobile-menu" class="md:hidden hidden bg-white border-t border-slate-100 absolute w-full shadow-lg z-50">
+        <div class="px-4 py-3 space-y-1">
+            
+            <a href="/" class="flex items-center px-3 py-2 text-sm text-slate-600 hover:text-blue-600 rounded-lg hover:bg-slate-50">
+                <span>Home</span>
+                
+                
+                
+            </a> 
+            
+            <a href="/Plans" class="flex items-center px-3 py-2 text-sm text-slate-600 hover:text-blue-600 rounded-lg hover:bg-slate-50">
+                <span>Plans</span>
+                
+                
+                
+                <span class="ml-1 bg-red-500 text-white text-xs font-bold px-1.5 py-0.5 rounded-full scale-75 origin-left">
+                    HOT
+                </span>
+                
+            </a> 
+            
+            <a href="/compatibility" class="flex items-center px-3 py-2 text-sm text-slate-600 hover:text-blue-600 rounded-lg hover:bg-slate-50">
+                <span>eSIM Compatibility</span>
+                
+                
+                
+            </a> 
+            
+            <a href="/about-us" class="flex items-center px-3 py-2 text-sm text-slate-600 hover:text-blue-600 rounded-lg hover:bg-slate-50">
+                <span>About Us</span>
+                
+                
+                
+            </a> 
+            
+            <a href="/faq" class="flex items-center px-3 py-2 text-sm text-slate-600 hover:text-blue-600 rounded-lg hover:bg-slate-50">
+                <span>FAQ</span>
+                
+                
+                
+            </a> 
+            
+        </div>
+    </div>
+</nav>
+
+
+<main class="flex-grow py-12">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+
+        
+        <div class="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden">
+            <div class="bg-blue-600 p-6 md:p-8 text-white">
+                <h1 class="text-2xl md:text-3xl font-bold mb-2"><i class="fa-solid fa-calculator mr-2"></i>Travel eSIM Data Calculator</h1>
+                <p class="text-blue-100 text-sm md:text-base">Enter your data amount or trip details to accurately estimate your network needs.</p>
+            </div>
+
+            <div class="p-6 md:p-8 grid grid-cols-1 lg:grid-cols-3 gap-8">
+                
+                <div class="space-y-6 lg:col-span-1">
+                    
+                    <div>
+                        <label class="block text-sm font-bold text-slate-700 mb-2">Your Data Amount (Required) <span class="text-red-500">*</span></label>
+                        <input type="text" id="dataInput" placeholder="e.g., 1, 1gb, 3GB" value="1GB"
+                               class="w-full px-4 py-3 rounded-lg border border-slate-300 focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition uppercase">
+                        <p class="text-xs text-slate-400 mt-1" id="dataInputError"></p>
+                    </div>
+
+                    
+                    <div class="pt-4 border-t border-slate-100">
+                        <h3 class="text-sm font-bold text-slate-700 mb-3">Trip Details (Optional)</h3>
+                        <div class="space-y-4">
+                            <div>
+                                <label class="block text-xs text-slate-500 mb-1">Destination (e.g., Thailand, Japan)</label>
+                                <input type="text" id="destInput" placeholder="Enter Country/Region"
+                                       class="w-full px-4 py-2 rounded-lg border border-slate-300 focus:ring-2 focus:ring-blue-500 outline-none">
+                            </div>
+                            <div class="grid grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-xs text-slate-500 mb-1">Days</label>
+                                    <input type="number" id="daysInput" placeholder="e.g., 7" min="1"
+                                           class="w-full px-4 py-2 rounded-lg border border-slate-300 focus:ring-2 focus:ring-blue-500 outline-none">
+                                </div>
+                                <div>
+                                    <label class="block text-xs text-slate-500 mb-1">Trip Type</label>
+                                    <select id="tripType" class="w-full px-4 py-2 rounded-lg border border-slate-300 focus:ring-2 focus:ring-blue-500 outline-none bg-white">
+                                        <option value="city">City Tour</option>
+                                        <option value="island">Island Getaway</option>
+                                        <option value="driving">Road Trip</option>
+                                        <option value="business">Business Trip</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button id="calcBtn" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-bold py-3 rounded-lg transition shadow-md">
+                        Calculate Now
+                    </button>
+                </div>
+
+                
+                <div class="lg:col-span-2 space-y-6">
+                    
+                    
+                    <div id="estimateResult" class="hidden bg-blue-50 border border-blue-100 rounded-xl p-5 fade-in">
+                        <h3 class="text-lg font-bold text-blue-800 mb-2">Estimated Data Usage</h3>
+                        <p class="text-blue-900 text-xl">Based on your trip, you will need approximately <span id="estRange" class="font-black text-2xl text-blue-600">--</span> of data.</p>
+                        <p class="text-sm text-blue-700 mt-2" id="estDetail"></p>
+                    </div>
+
+                    
+                    <div class="bg-white border border-slate-200 rounded-xl overflow-hidden shadow-sm">
+                        <div class="bg-slate-50 px-5 py-4 border-b border-slate-200 flex justify-between items-center">
+                            <h3 class="font-bold text-slate-800">What <span id="displayGb" class="text-blue-600 text-xl">1</span> GB Can Do</h3>
+                        </div>
+                        <div class="overflow-x-auto">
+                            <table class="w-full text-left border-collapse">
+                                <thead>
+                                    <tr class="bg-slate-50 text-slate-500 text-xs uppercase tracking-wider">
+                                        <th class="p-4 font-medium">Activity</th>
+                                        <th class="p-4 font-medium">Avg. Usage / Hr</th>
+                                        <th class="p-4 font-medium">Duration per <span class="dynamic-gb-text">1GB</span></th>
+                                        <th class="p-4 font-medium hidden md:table-cell">Data Saving Tip</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="tableBody" class="text-sm divide-y divide-slate-100">
+                                    
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                    
+                    <div id="destSeoContent" class="hidden bg-gradient-to-r from-emerald-50 to-teal-50 border border-emerald-100 rounded-xl p-6 fade-in">
+                        <h3 class="text-xl font-bold text-emerald-800 mb-3"><i class="fa-solid fa-location-dot mr-2"></i><span id="destName"></span> eSIM Guide</h3>
+                        <p class="text-emerald-700 mb-4 text-sm leading-relaxed">
+                            Traveling to <span class="dest-text font-bold"></span>? Local major carriers provide extensive coverage, including high-speed 5G. For your <span id="destTripType" class="font-semibold lowercase"></span>, we recommend a stable eSIM plan to ensure you stay connected everywhere.
+                        </p>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div class="bg-white p-4 rounded-lg shadow-sm border border-emerald-100">
+                                <h4 class="font-bold text-emerald-600 text-sm mb-1">Network Coverage</h4>
+                                <p class="text-xs text-slate-600">4G/5G high-speed networks are widely available in cities and popular attractions.</p>
+                            </div>
+                            <div class="bg-white p-4 rounded-lg shadow-sm border border-emerald-100">
+                                <h4 class="font-bold text-emerald-600 text-sm mb-1">Local Policy</h4>
+                                <p class="text-xs text-slate-600">Travel eSIMs require no identity verification. Plug and play upon arrival.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="text-center py-4 text-xs text-slate-400">
+            <p>注：此计算基于行业平均水平，仅供参考</p>
+        </div>
+
+        
+        
+        <section class="py-12 bg-gray-50 mt-4 rounded-3xl">
+            <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+                
+                
+                <div class="text-center mb-10">
+                    <h2 class="text-2xl md:text-3xl font-bold text-gray-900" id="planTitle">Popular Global eSIM Plans</h2>
+                    <p class="mt-2 text-gray-500">Stay connected wherever you go with our top-rated eSIMs.</p>
+                </div>
+
+                
+                <div id="destPlans" class="hidden grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 mb-8">
+                </div>
+
+                
+                <div id="defaultPlans" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
+                    
+                    
+                    
+                    <a href="" class="group relative bg-white rounded-2xl p-4 flex items-center space-x-4 transition-all duration-200 hover:shadow-lg hover:-translate-y-1 border border-gray-200 shadow-sm">
+                        
+                        
+                        
+
+                        
+                        <div class="flex-shrink-0 w-12 h-8 md:w-14 md:h-10 rounded shadow-sm overflow-hidden bg-gray-100 border border-gray-200">
+                            <img src="/img/flags/us.svg" alt="USA eSIM" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                        </div>
+
+                        
+                        <div class="flex-1 min-w-0">
+                            <h3 class="text-sm md:text-base font-bold text-gray-900 truncate">USA eSIM</h3>
+                            <p class="text-xs md:text-sm text-blue-600 font-semibold mt-0.5">From $1.99</p>
+                        </div>
+                    </a>
+                    
+                    
+                    <a href="" class="group relative bg-white rounded-2xl p-4 flex items-center space-x-4 transition-all duration-200 hover:shadow-lg hover:-translate-y-1 border border-gray-200 shadow-sm">
+                        
+                        
+                        
+
+                        
+                        <div class="flex-shrink-0 w-12 h-8 md:w-14 md:h-10 rounded shadow-sm overflow-hidden bg-gray-100 border border-gray-200">
+                            <img src="/img/flags/gb.svg" alt="UK eSIM" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                        </div>
+
+                        
+                        <div class="flex-1 min-w-0">
+                            <h3 class="text-sm md:text-base font-bold text-gray-900 truncate">UK eSIM</h3>
+                            <p class="text-xs md:text-sm text-blue-600 font-semibold mt-0.5">From $1.99</p>
+                        </div>
+                    </a>
+                    
+                    
+                    <a href="" class="group relative bg-white rounded-2xl p-4 flex items-center space-x-4 transition-all duration-200 hover:shadow-lg hover:-translate-y-1 border-2 border-blue-600 shadow-md">
+                        
+                        
+                        
+                        <span class="absolute -top-3 right-4 bg-blue-600 text-white text-xs font-bold px-3 py-1 rounded-full shadow-sm">
+                            HOT
+                        </span>
+                        
+
+                        
+                        <div class="flex-shrink-0 w-12 h-8 md:w-14 md:h-10 rounded shadow-sm overflow-hidden bg-gray-100 border border-gray-200">
+                            <img src="/img/flags/eu.svg" alt="Europe eSIM" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                        </div>
+
+                        
+                        <div class="flex-1 min-w-0">
+                            <h3 class="text-sm md:text-base font-bold text-gray-900 truncate">Europe eSIM</h3>
+                            <p class="text-xs md:text-sm text-blue-600 font-semibold mt-0.5">From $1.99</p>
+                        </div>
+                    </a>
+                    
+                    
+                    <a href="" class="group relative bg-white rounded-2xl p-4 flex items-center space-x-4 transition-all duration-200 hover:shadow-lg hover:-translate-y-1 border border-gray-200 shadow-sm">
+                        
+                        
+                        
+
+                        
+                        <div class="flex-shrink-0 w-12 h-8 md:w-14 md:h-10 rounded shadow-sm overflow-hidden bg-gray-100 border border-gray-200">
+                            <img src="/img/flags/ca.svg" alt="Canada eSIM" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                        </div>
+
+                        
+                        <div class="flex-1 min-w-0">
+                            <h3 class="text-sm md:text-base font-bold text-gray-900 truncate">Canada eSIM</h3>
+                            <p class="text-xs md:text-sm text-blue-600 font-semibold mt-0.5">From $1.99</p>
+                        </div>
+                    </a>
+                    
+                    
+                    <a href="" class="group relative bg-white rounded-2xl p-4 flex items-center space-x-4 transition-all duration-200 hover:shadow-lg hover:-translate-y-1 border border-gray-200 shadow-sm">
+                        
+                        
+                        
+
+                        
+                        <div class="flex-shrink-0 w-12 h-8 md:w-14 md:h-10 rounded shadow-sm overflow-hidden bg-gray-100 border border-gray-200">
+                            <img src="/img/flags/tr.svg" alt="Turkey eSIM" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                        </div>
+
+                        
+                        <div class="flex-1 min-w-0">
+                            <h3 class="text-sm md:text-base font-bold text-gray-900 truncate">Turkey eSIM</h3>
+                            <p class="text-xs md:text-sm text-blue-600 font-semibold mt-0.5">From $1.99</p>
+                        </div>
+                    </a>
+                    
+                    
+                    <a href="" class="group relative bg-white rounded-2xl p-4 flex items-center space-x-4 transition-all duration-200 hover:shadow-lg hover:-translate-y-1 border border-gray-200 shadow-sm">
+                        
+                        
+                        
+
+                        
+                        <div class="flex-shrink-0 w-12 h-8 md:w-14 md:h-10 rounded shadow-sm overflow-hidden bg-gray-100 border border-gray-200">
+                            <img src="/img/flags/cn.svg" alt="China eSIM" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                        </div>
+
+                        
+                        <div class="flex-1 min-w-0">
+                            <h3 class="text-sm md:text-base font-bold text-gray-900 truncate">China eSIM</h3>
+                            <p class="text-xs md:text-sm text-blue-600 font-semibold mt-0.5">From $1.99</p>
+                        </div>
+                    </a>
+                    
+                    
+                    <a href="" class="group relative bg-white rounded-2xl p-4 flex items-center space-x-4 transition-all duration-200 hover:shadow-lg hover:-translate-y-1 border border-gray-200 shadow-sm">
+                        
+                        
+                        
+
+                        
+                        <div class="flex-shrink-0 w-12 h-8 md:w-14 md:h-10 rounded shadow-sm overflow-hidden bg-gray-100 border border-gray-200">
+                            <img src="/img/flags/jp.svg" alt="Japan eSIM" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                        </div>
+
+                        
+                        <div class="flex-1 min-w-0">
+                            <h3 class="text-sm md:text-base font-bold text-gray-900 truncate">Japan eSIM</h3>
+                            <p class="text-xs md:text-sm text-blue-600 font-semibold mt-0.5">From $1.99</p>
+                        </div>
+                    </a>
+                    
+                    
+                    <a href="" class="group relative bg-white rounded-2xl p-4 flex items-center space-x-4 transition-all duration-200 hover:shadow-lg hover:-translate-y-1 border border-gray-200 shadow-sm">
+                        
+                        
+                        
+
+                        
+                        <div class="flex-shrink-0 w-12 h-8 md:w-14 md:h-10 rounded shadow-sm overflow-hidden bg-gray-100 border border-gray-200">
+                            <img src="/img/flags/au.svg" alt="Australia eSIM" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                        </div>
+
+                        
+                        <div class="flex-1 min-w-0">
+                            <h3 class="text-sm md:text-base font-bold text-gray-900 truncate">Australia eSIM</h3>
+                            <p class="text-xs md:text-sm text-blue-600 font-semibold mt-0.5">From $1.99</p>
+                        </div>
+                    </a>
+                    
+                </div>
+            </div>
+        </section>
+        
+
+    </div>
+</main>
+
+
+<footer class="bg-slate-950 text-white py-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid md:grid-cols-4 gap-10 mb-12">
+            <div class="md:col-span-1">
+                <div class="text-2xl font-extrabold text-blue-500 mb-3 cursor-pointer" onclick="k2()">Roami</div>
+                <p class="text-slate-400 text-sm mb-1">Global Connectivity Expert</p>
+                <p class="text-slate-600 text-xs leading-relaxed">Providing premium eSIM services in 200&#43; countries and regions, keeping you connected wherever you travel.</p>
+            </div>
+            <div>
+                <h3 class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-4">Top Destinations</h3>
+                <ul class="space-y-2.5 text-sm">
+                    
+                    <li><a href="/United-States-eSIM/" class="text-slate-500 hover:text-white transition-colors">United States eSIM</a></li>
+                    
+                    <li><a href="/Europe-eSIM/" class="text-slate-500 hover:text-white transition-colors">Europe eSIM</a></li>
+                    
+                    <li><a href="/Japan-eSIM/" class="text-slate-500 hover:text-white transition-colors">Japan eSIM</a></li>
+                    
+                    <li><a href="/Germany-eSIM/" class="text-slate-500 hover:text-white transition-colors">Germany eSIM</a></li>
+                    
+                    <li><a href="/Turkey-eSIM/" class="text-slate-500 hover:text-white transition-colors">Turkey eSIM</a></li>
+                    
+                    <li><a href="/Canada-eSIM/" class="text-slate-500 hover:text-white transition-colors">Canada eSIM</a></li>
+                    
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-4">Customer Support</h3>
+                <ul class="space-y-2.5 text-sm"> 
+                    
+                    <li><a href="/faq/" class="text-slate-500 hover:text-white transition-colors">FAQ</a></li>
+                    
+                    <li><a href="/compatibility/" class="text-slate-500 hover:text-white transition-colors">eSIM Compatibility</a></li>
+                    
+                    <li><a href="/contact/" class="text-slate-500 hover:text-white transition-colors">Contact Support</a></li>
+                    
+                </ul>
+            </div>
+            <div>
+                <h3 class="text-xs font-bold text-slate-400 uppercase tracking-widest mb-4">Company Info</h3>
+                <ul class="space-y-2.5 text-sm">
+                    
+                    <li><a href="/about-us/" class="text-slate-500 hover:text-white transition-colors">About Us</a></li>
+                    
+                    <li><a href="/privacy/" class="text-slate-500 hover:text-white transition-colors">Privacy Policy</a></li>
+                    
+                    <li><a href="/terms/" class="text-slate-500 hover:text-white transition-colors">Terms of Service</a></li>
+                    
+                </ul>
+            </div>
+        </div>
+        <div class="border-t border-slate-800/70 pt-8 flex flex-col md:flex-row justify-between items-center gap-3">
+            <p class="text-slate-500 text-sm">© 2026 Roami. All rights reserved.</p>
+            <p class="text-slate-700 text-xs">Professional Global eSIM Service Provider | Global eSIM Data Roaming Expert</p>
+        </div>
+    </div>
+</footer>
+
+
+<div id="custom-modal" class="fixed inset-0 z-[100] hidden flex items-center justify-center bg-slate-900/60 backdrop-blur-sm transition-opacity">
+    <div class="bg-white rounded-2xl p-8 max-w-md w-full mx-4 shadow-2xl transform scale-95 transition-transform duration-300" id="modal-content">
+        <div class="text-center">
+            <div class="w-16 h-16 bg-blue-50 rounded-full flex items-center justify-center mx-auto mb-5">
+                <i data-lucide="bell-ring" class="w-8 h-8 text-blue-600"></i>
+            </div>
+            <h3 class="text-xl font-bold text-slate-900 mb-3">Notice</h3>
+            <p class="text-slate-600 mb-8 leading-relaxed text-sm" id="modal-desc"></p>
+            <div class="flex gap-3 justify-center">
+                <button onclick="closeModal()" class="px-6 py-2.5 rounded-xl text-slate-600 bg-slate-100 hover:bg-slate-200 font-semibold transition-colors text-sm">Cancel</button>
+                <button id="modal-action-btn" class="px-6 py-2.5 rounded-xl text-white bg-blue-600 hover:bg-blue-700 font-semibold transition-colors shadow-lg shadow-blue-600/30 text-sm">Go now</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    lucide.createIcons();
+
+    
+    function showModal(desc, actionFunc) {
+        document.getElementById('modal-desc').innerHTML = desc;
+        document.getElementById('modal-action-btn').onclick = function() {
+            actionFunc();
+            closeModal();
+        };
+        const modal = document.getElementById('custom-modal');
+        const content = document.getElementById('modal-content');
+        modal.classList.remove('hidden');
+        setTimeout(() => {
+            content.classList.remove('scale-95');
+            content.classList.add('scale-100');
+        }, 10);
+    }
+
+    function closeModal() {
+        const modal = document.getElementById('custom-modal');
+        const content = document.getElementById('modal-content');
+        content.classList.remove('scale-100');
+        content.classList.add('scale-95');
+        setTimeout(() => {
+            modal.classList.add('hidden');
+        }, 300);
+    }
+
+    
+    function handleAndroidClick() {
+        showModal('Our eSIM service has been upgraded to <strong>PhoneSIM</strong>.<br>New customers enjoy a 20% discount, promo code: <strong class="text-blue-600 text-base ml-1">ESIM20</strong>', k3);
+    }
+
+    function handleWebClick() {
+        showModal('Our eSIM service has been upgraded to <strong>PhoneSIMGo</strong>.<br>New customers enjoy a 20% discount, promo code: <strong class="text-blue-600 text-base ml-1">ESIM20</strong>', k4);
+    }
+
+    
+    document.getElementById('mobile-menu-btn').addEventListener('click', function () {
+        document.getElementById('mobile-menu').classList.toggle('hidden');
+    });
+
+    
+    document.querySelectorAll('a[href^="#"]').forEach(function (a) {
+        a.addEventListener('click', function (e) {
+            var href = this.getAttribute('href');
+            if (href === '#') return;
+            e.preventDefault();
+            var target = document.querySelector(href);
+            if (target) {
+                target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                document.getElementById('mobile-menu').classList.add('hidden');
+            }
+        });
+    });
+
+    
+    document.querySelectorAll('.tab-btn').forEach(function (btn) {
+        btn.addEventListener('click', function () {
+            document.querySelectorAll('.tab-btn').forEach(function (b) {
+                b.classList.remove('bg-blue-600', 'text-white', 'shadow-sm');
+                b.classList.add('text-slate-500');
+            });
+            document.querySelectorAll('.tab-content').forEach(function (c) { c.classList.remove('active'); });
+            btn.classList.add('bg-blue-600', 'text-white', 'shadow-sm');
+            btn.classList.remove('text-slate-500');
+            var target = document.getElementById(btn.getAttribute('data-target'));
+            if (target) target.classList.add('active');
+        });
+    });
+
+    
+    document.querySelectorAll('.dl-tab-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+            const group = btn.getAttribute('data-group');
+            document.querySelectorAll(`.dl-tab-btn[data-group="${group}"]`).forEach(b => {
+                b.classList.remove('text-white', 'border-blue-500');
+                b.classList.add('text-slate-400', 'border-transparent');
+            });
+            btn.classList.add('text-white', 'border-blue-500');
+            btn.classList.remove('text-slate-400', 'border-transparent');
+            
+            document.querySelectorAll(`.dl-tab-content[data-group="${group}"]`).forEach(c => {
+                c.classList.add('hidden');
+                c.classList.remove('active');
+            });
+            const target = document.getElementById(btn.getAttribute('data-target'));
+            target.classList.remove('hidden');
+            target.classList.add('active');
+        });
+    });
+
+    
+    document.querySelectorAll('.dl-tab-btn2').forEach(btn => {
+        btn.addEventListener('click', () => {
+            document.querySelectorAll('.dl-tab-btn2').forEach(b => {
+                b.classList.remove('bg-blue-600', 'text-white');
+                b.classList.add('text-slate-400');
+            });
+            btn.classList.add('bg-blue-600', 'text-white');
+            btn.classList.remove('text-slate-400');
+            
+            document.querySelectorAll('.dl-tab-content2').forEach(c => {
+                c.classList.add('hidden');
+                c.classList.remove('active');
+            });
+            const target = document.getElementById(btn.getAttribute('data-target'));
+            target.classList.remove('hidden');
+            target.classList.add('active');
+        });
+    });
+</script>
+
+<script>
+    
+    const usageData = [
+        { name: "Web Browsing / Email", icon: "fa-globe", color: "text-blue-500", avg: "50-100 MB", minMb: 50, maxMb: 100, tip: "Disable auto-load images" },
+        { name: "Google Maps Navigation", icon: "fa-map-location-dot", color: "text-green-500", avg: "5-10 MB", minMb: 5, maxMb: 10, tip: "Download offline maps" },
+        { name: "WhatsApp Text/Audio", icon: "fa-whatsapp", color: "text-emerald-500", avg: "1-5 MB", minMb: 1, maxMb: 5, tip: "Disable auto-download media" },
+        { name: "Instagram (Browsing)", icon: "fa-instagram", color: "text-pink-500", avg: "100-200 MB", minMb: 100, maxMb: 200, tip: "Use Data Saver mode" },
+        { name: "YouTube (SD 480p)", icon: "fa-youtube", color: "text-red-500", avg: "500 MB", minMb: 500, maxMb: 500, tip: "Adjust to 480p quality" },
+        { name: "Music Streaming (Spotify)", icon: "fa-spotify", color: "text-green-600", avg: "70-150 MB", minMb: 70, maxMb: 150, tip: "Download playlists to device" },
+        { name: "Video Calls (Zoom)", icon: "fa-video", color: "text-indigo-500", avg: "1-1.5 GB", minMb: 1024, maxMb: 1536, tip: "Use voice only or Wi-Fi" }
+    ];
+
+    
+    function parseGB(input) {
+        const match = input.toLowerCase().match(/([0-9.]+)/);
+        if (match && match[1]) {
+            return parseFloat(match[1]);
+        }
+        return null;
+    }
+
+    function calculateDuration(gb) {
+        const totalMb = gb * 1024;
+        const tbody = document.getElementById('tableBody');
+        if (!tbody) return; 
+        
+        tbody.innerHTML = '';
+
+        usageData.forEach(item => {
+            let minHours = totalMb / item.maxMb;
+            let maxHours = totalMb / item.minMb;
+            
+            let timeStr = '';
+            if (minHours > 200) {
+                timeStr = '<span class="text-emerald-600 font-bold">200+ hours</span>';
+            } else if (maxHours < 1) {
+                timeStr = '<span class="text-red-500 font-bold">< 1 hour</span>';
+            } else {
+                const format = (num) => num >= 10 ? Math.round(num) : num.toFixed(1);
+                if (item.minMb === item.maxMb) {
+                    timeStr = `~ ${format(minHours)} hrs`;
+                } else {
+                    timeStr = `${format(minHours)} - ${format(maxHours)} hrs`;
+                }
+            }
+
+            const tr = document.createElement('tr');
+            tr.className = 'hover:bg-slate-50 transition';
+            tr.innerHTML = `
+                <td class="p-4 font-medium text-slate-800 flex items-center gap-2">
+                    <i class="fa-brands ${item.icon} ${item.color} w-5 text-center"></i> ${item.name}
+                </td>
+                <td class="p-4 text-slate-600">${item.avg}</td>
+                <td class="p-4 font-semibold text-slate-900">${timeStr}</td>
+                <td class="p-4 text-slate-500 hidden md:table-cell text-xs"><i class="fa-regular fa-lightbulb text-yellow-500 mr-1"></i>${item.tip}</td>
+            `;
+            tbody.appendChild(tr);
+        });
+
+        const displayGb = document.getElementById('displayGb');
+        if (displayGb) displayGb.innerText = gb;
+        
+        document.querySelectorAll('.dynamic-gb-text').forEach(el => el.innerText = gb + 'GB');
+    }
+
+    function calculateEstimate(days, tripType) {
+        if (!days || days < 1) return null;
+        
+        let dailyMbMin = 100;
+        let dailyMbMax = 200;
+
+        if (tripType === 'city') { dailyMbMin += 100; dailyMbMax += 300; }
+        else if (tripType === 'island') { dailyMbMin += 50; dailyMbMax += 150; }
+        else if (tripType === 'driving') { dailyMbMin += 150; dailyMbMax += 350; }
+        else if (tripType === 'business') { dailyMbMin += 200; dailyMbMax += 500; }
+
+        let totalGbMin = (dailyMbMin * days) / 1024;
+        let totalGbMax = (dailyMbMax * days) / 1024;
+
+        return {
+            min: totalGbMin.toFixed(1),
+            max: totalGbMax.toFixed(1)
+        };
+    }
+
+    
+    calculateDuration(1);
+
+    
+    document.addEventListener('DOMContentLoaded', () => {
+        const calcBtn = document.getElementById('calcBtn');
+        if (!calcBtn) return;
+
+        calcBtn.addEventListener('click', () => {
+            const rawInput = document.getElementById('dataInput').value;
+            const gb = parseGB(rawInput);
+            const errorEl = document.getElementById('dataInputError');
+            
+            if (!gb || gb <= 0) {
+                errorEl.innerText = "Please enter a valid format, e.g., 1, 1gb, 3GB";
+                errorEl.classList.add('text-red-500');
+                return;
+            }
+            errorEl.innerText = "";
+            
+            
+            calculateDuration(gb);
+
+            
+            const daysInput = document.getElementById('daysInput');
+            const days = daysInput ? parseInt(daysInput.value) : 0;
+            const tripTypeSelect = document.getElementById('tripType');
+            const tripTypeVal = tripTypeSelect.value;
+            const tripTypeText = tripTypeSelect.options[tripTypeSelect.selectedIndex].text;
+            
+            const estBox = document.getElementById('estimateResult');
+            if (days && days > 0) {
+                const est = calculateEstimate(days, tripTypeVal);
+                document.getElementById('estRange').innerText = `${est.min} - ${est.max} GB`;
+                document.getElementById('estDetail').innerText = `Calculated based on a ${days}-day ${tripTypeText.toLowerCase()}.`;
+                estBox.classList.remove('hidden');
+            } else {
+                estBox.classList.add('hidden');
+            }
+
+            
+            const destInput = document.getElementById('destInput');
+            const dest = destInput ? destInput.value.trim() : '';
+            const destSeoBox = document.getElementById('destSeoContent');
+            const destPlansBox = document.getElementById('destPlans');
+            const defaultPlansBox = document.getElementById('defaultPlans');
+            const planTitle = document.getElementById('planTitle');
+
+            if (dest && destPlansBox) {
+                document.getElementById('destName').innerText = dest;
+                document.querySelectorAll('.dest-text').forEach(el => el.innerText = dest);
+                document.getElementById('destTripType').innerText = tripTypeText;
+                destSeoBox.classList.remove('hidden');
+
+                if (planTitle) planTitle.innerText = `Recommended eSIMs for ${dest}`;
+                
+                destPlansBox.innerHTML = `
+                    <div class="bg-gradient-to-br from-emerald-500 to-teal-600 rounded-xl border border-transparent p-5 shadow-lg text-white flex flex-col h-full transform transition hover:-translate-y-1">
+                        <div class="text-xs font-bold bg-white/20 w-max px-2 py-1 rounded mb-3">Best for ${dest}</div>
+                        <h3 class="font-bold text-xl mb-1">${dest} Unlimited Data</h3>
+                        <p class="text-emerald-100 text-sm mb-4">High-speed 5G Network</p>
+                        <div class="mt-auto pt-4 border-t border-white/20 flex justify-between items-center">
+                            <span class="font-black text-2xl">$19.99</span>
+                            <button class="text-sm bg-white text-emerald-700 font-bold px-4 py-2 rounded-lg hover:bg-slate-100">Details</button>
+                        </div>
+                    </div>
+                `;
+                destPlansBox.classList.remove('hidden');
+                if (defaultPlansBox) defaultPlansBox.classList.add('hidden');
+            } else {
+                if (destSeoBox) destSeoBox.classList.add('hidden');
+                if (destPlansBox) destPlansBox.classList.add('hidden');
+                if (defaultPlansBox) defaultPlansBox.classList.remove('hidden');
+                if (planTitle) planTitle.innerText = "Popular Global eSIM Plans";
+            }
+        });
+    });
+</script>
+</body>
+</html>
