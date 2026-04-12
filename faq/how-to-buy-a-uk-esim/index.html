@@ -114,8 +114,7 @@
     
 
     
-    <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
-    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=typography"></script> 
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <script>
         tailwind.config = {
@@ -281,7 +280,7 @@
             </div>
             <div class="flex items-center">
                 <i data-lucide="clock" class="w-4 h-4 mr-2 opacity-80"></i>
-                <span>6 min read</span>
+                <span>5 min read</span>
             </div>
         </div>
     </div>
@@ -330,8 +329,7 @@
             prose-a:text-blue-600 hover:prose-a:text-blue-800 prose-a:no-underline hover:prose-a:underline
             prose-img:rounded-xl prose-img:shadow-md
             prose-li:marker:text-blue-500">
-          
-<h2 id="core-summary-quick-answer">Core Summary (Quick Answer)</h2>
+            <h2 id="core-summary-quick-answer">Core Summary (Quick Answer)</h2>
 <p>The fastest and most reliable way to buy a <a href="/united-kingdom-esim/">UK eSIM</a> comes down to three simple steps:</p>
 <ol>
 <li><strong>Check Compatibility</strong>: Dial <strong>*#06#</strong> on your phone. If you see an <strong>EID</strong> number, your phone supports eSIM. (Note: US iPhone 14/15/16 models are eSIM-only).</li>
@@ -377,7 +375,7 @@
           <td style="text-align: left">UK &amp; Euro Trips</td>
           <td style="text-align: left">10GB / 15 Days</td>
           <td style="text-align: left">Multi-Network / EU included</td>
-          <td style="text-align: left">~$13</td>
+          <td style="text-align: left">~$15</td>
       </tr>
       <tr>
           <td style="text-align: left"><strong>Airalo</strong></td>
@@ -635,7 +633,13 @@
     <div class="bg-white rounded-2xl p-8 max-w-md w-full mx-4 shadow-2xl transform scale-95 transition-transform duration-300" id="modal-content">
         <div class="text-center">
             <div class="w-16 h-16 bg-blue-50 rounded-full flex items-center justify-center mx-auto mb-5">
-                <i data-lucide="bell-ring" class="w-8 h-8 text-blue-600"></i>
+                
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-8 h-8 text-blue-600">
+                    <path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/>
+                    <path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/>
+                    <path d="M4 2C2.8 3.7 2 5.7 2 8"/>
+                    <path d="M22 8c0-2.3-.8-4.3-2-6"/>
+                </svg>
             </div>
             <h3 class="text-xl font-bold text-slate-900 mb-3">Notice</h3>
             <p class="text-slate-600 mb-8 leading-relaxed text-sm" id="modal-desc"></p>
@@ -648,8 +652,6 @@
 </div>
 
 <script>
-    lucide.createIcons();
-
     
     function showModal(desc, actionFunc) {
         document.getElementById('modal-desc').innerHTML = desc;

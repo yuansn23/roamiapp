@@ -114,8 +114,7 @@
     
 
     
-    <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
-    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=typography"></script> 
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <script>
         tailwind.config = {
@@ -652,7 +651,13 @@ Normally, the download and activation process takes less than 2 minutes. However
     <div class="bg-white rounded-2xl p-8 max-w-md w-full mx-4 shadow-2xl transform scale-95 transition-transform duration-300" id="modal-content">
         <div class="text-center">
             <div class="w-16 h-16 bg-blue-50 rounded-full flex items-center justify-center mx-auto mb-5">
-                <i data-lucide="bell-ring" class="w-8 h-8 text-blue-600"></i>
+                
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-8 h-8 text-blue-600">
+                    <path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/>
+                    <path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/>
+                    <path d="M4 2C2.8 3.7 2 5.7 2 8"/>
+                    <path d="M22 8c0-2.3-.8-4.3-2-6"/>
+                </svg>
             </div>
             <h3 class="text-xl font-bold text-slate-900 mb-3">Notice</h3>
             <p class="text-slate-600 mb-8 leading-relaxed text-sm" id="modal-desc"></p>
@@ -665,8 +670,6 @@ Normally, the download and activation process takes less than 2 minutes. However
 </div>
 
 <script>
-    lucide.createIcons();
-
     
     function showModal(desc, actionFunc) {
         document.getElementById('modal-desc').innerHTML = desc;
