@@ -71,10 +71,7 @@
     </script>
     
 
- <link href="/css/tailwind-compiled.css" rel="stylesheet">
-	
- 
-
+    <link href="/css/tailwind-compiled.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
  
     <style>
@@ -99,7 +96,7 @@
             color: #1d4ed8;
             font-weight: 600;
         }
-        .nav-item.active i {
+        .nav-item.active svg {
             color: #2563eb;
         }
 
@@ -322,7 +319,7 @@
                 </li>
                 <li>
                     <div class="flex items-center">
-                        <i data-lucide="chevron-right" class="w-4 h-4 mx-1 opacity-70"></i>
+                        <svg class="w-4 h-4 mx-1 opacity-70" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
                         <span class="text-white font-medium">Help Center</span>
                     </div>
                 </li>
@@ -334,7 +331,7 @@
         
         <div class="relative max-w-xl mx-auto">
             <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
-                <i data-lucide="search" class="h-5 w-5 text-slate-400"></i>
+                <svg class="h-5 w-5 text-slate-400" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
             </div>
             <input type="text" id="faq-search" class="block w-full pl-11 pr-4 py-3 rounded-xl border-0 text-slate-900 ring-1 ring-inset ring-slate-300 placeholder:text-slate-400 focus:ring-2 focus:ring-inset focus:ring-blue-500 sm:text-base shadow-lg outline-none transition-shadow" placeholder="e.g., How to install eSIM on iPhone or How to activate O2 UK eSIM?">
         </div>
@@ -352,17 +349,17 @@
             <nav class="space-y-2" id="faq-nav">
                 
                 <button data-target="category-0" class="nav-item w-full flex items-center px-4 py-3 text-sm font-medium rounded-xl text-slate-600 hover:bg-slate-100 hover:text-slate-900 transition-all active">
-                    <i data-lucide="book-open" class="w-5 h-5 mr-3 text-slate-400 transition-colors"></i>
+                    <svg class="w-5 h-5 mr-3 text-slate-400 transition-colors" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z"/></svg>
                     General eSIM Basics
                 </button>
                 
                 <button data-target="category-1" class="nav-item w-full flex items-center px-4 py-3 text-sm font-medium rounded-xl text-slate-600 hover:bg-slate-100 hover:text-slate-900 transition-all ">
-                    <i data-lucide="smartphone" class="w-5 h-5 mr-3 text-slate-400 transition-colors"></i>
+                    <svg class="w-5 h-5 mr-3 text-slate-400 transition-colors" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z"/></svg>
                     Device-Specific Activation
                 </button>
                 
                 <button data-target="category-2" class="nav-item w-full flex items-center px-4 py-3 text-sm font-medium rounded-xl text-slate-600 hover:bg-slate-100 hover:text-slate-900 transition-all ">
-                    <i data-lucide="smartphone" class="w-5 h-5 mr-3 text-slate-400 transition-colors"></i>
+                    <svg class="w-5 h-5 mr-3 text-slate-400 transition-colors" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z"/></svg>
                     Purchase esim
                 </button>
                 
@@ -375,7 +372,7 @@
         <div class="bg-white rounded-3xl shadow-sm border border-slate-200 p-6 sm:p-10 min-h-[500px]" id="faq-container">
             
             <div id="no-results" class="hidden text-center py-16">
-                <i data-lucide="search-x" class="w-12 h-12 text-slate-300 mx-auto mb-4"></i>
+                <svg class="w-12 h-12 text-slate-300 mx-auto mb-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m13.5 8.5-5 5"/><path d="m8.5 8.5 5 5"/><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
                 <h3 class="text-lg font-medium text-slate-900 mb-2">No results found</h3>
                 <p class="text-slate-500 text-sm">Please try different keywords or browse the categories on the left.</p>
             </div>
@@ -398,7 +395,7 @@
                         <button class="faq-toggle w-full flex items-center justify-between p-4 text-left focus:outline-none" aria-expanded="false">
                             
                             <h3 class="text-base m-0 text-slate-700 font-medium pr-4 group-hover:text-blue-700 transition-colors">What is eSIM activation and how does it work?</h3>
-                            <i data-lucide="chevron-down" class="chevron-icon w-5 h-5 text-slate-400 transition-transform duration-300 flex-shrink-0"></i>
+                            <svg class="chevron-icon w-5 h-5 text-slate-400 transition-transform duration-300 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
                         </button>
                         
                         <div class="faq-answer">
@@ -412,7 +409,7 @@
                                     
                                     <a href="/faq/what-is-esim-activation-and-how-does-it-work" class="inline-flex items-center text-sm font-semibold text-blue-600 hover:text-blue-800 transition-colors">
                                         View Details
-                                        <i data-lucide="arrow-right" class="w-4 h-4 ml-1"></i>
+                                        <svg class="w-4 h-4 ml-1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
                                     </a>
                                 </div>
                             </div>
@@ -423,7 +420,7 @@
                         <button class="faq-toggle w-full flex items-center justify-between p-4 text-left focus:outline-none" aria-expanded="false">
                             
                             <h3 class="text-base m-0 text-slate-700 font-medium pr-4 group-hover:text-blue-700 transition-colors">How to activate an eSIM? (General Step-by-Step Guide)</h3>
-                            <i data-lucide="chevron-down" class="chevron-icon w-5 h-5 text-slate-400 transition-transform duration-300 flex-shrink-0"></i>
+                            <svg class="chevron-icon w-5 h-5 text-slate-400 transition-transform duration-300 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
                         </button>
                         
                         <div class="faq-answer">
@@ -437,7 +434,7 @@
                                     
                                     <a href="/faq/how-to-activate-an-esim" class="inline-flex items-center text-sm font-semibold text-blue-600 hover:text-blue-800 transition-colors">
                                         View Details
-                                        <i data-lucide="arrow-right" class="w-4 h-4 ml-1"></i>
+                                        <svg class="w-4 h-4 ml-1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
                                     </a>
                                 </div>
                             </div>
@@ -464,7 +461,7 @@
                         <button class="faq-toggle w-full flex items-center justify-between p-4 text-left focus:outline-none" aria-expanded="false">
                             
                             <h3 class="text-base m-0 text-slate-700 font-medium pr-4 group-hover:text-blue-700 transition-colors">How to activate eSIM on iPhone (All Models)?</h3>
-                            <i data-lucide="chevron-down" class="chevron-icon w-5 h-5 text-slate-400 transition-transform duration-300 flex-shrink-0"></i>
+                            <svg class="chevron-icon w-5 h-5 text-slate-400 transition-transform duration-300 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
                         </button>
                         
                         <div class="faq-answer">
@@ -478,7 +475,7 @@
                                     
                                     <a href="/faq/how-to-activate-esim-on-iphone" class="inline-flex items-center text-sm font-semibold text-blue-600 hover:text-blue-800 transition-colors">
                                         View Details
-                                        <i data-lucide="arrow-right" class="w-4 h-4 ml-1"></i>
+                                        <svg class="w-4 h-4 ml-1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
                                     </a>
                                 </div>
                             </div>
@@ -505,7 +502,7 @@
                         <button class="faq-toggle w-full flex items-center justify-between p-4 text-left focus:outline-none" aria-expanded="false">
                             
                             <h3 class="text-base m-0 text-slate-700 font-medium pr-4 group-hover:text-blue-700 transition-colors">The Ultimate Guide to US eSIM in 2026: How to Choose the Best Plan?</h3>
-                            <i data-lucide="chevron-down" class="chevron-icon w-5 h-5 text-slate-400 transition-transform duration-300 flex-shrink-0"></i>
+                            <svg class="chevron-icon w-5 h-5 text-slate-400 transition-transform duration-300 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
                         </button>
                         
                         <div class="faq-answer">
@@ -519,7 +516,7 @@
                                     
                                     <a href="/faq/the-ultimate-guide-to-us-esim-in-2026-how-to-choose-the-best-plan" class="inline-flex items-center text-sm font-semibold text-blue-600 hover:text-blue-800 transition-colors">
                                         View Details
-                                        <i data-lucide="arrow-right" class="w-4 h-4 ml-1"></i>
+                                        <svg class="w-4 h-4 ml-1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
                                     </a>
                                 </div>
                             </div>
@@ -530,7 +527,7 @@
                         <button class="faq-toggle w-full flex items-center justify-between p-4 text-left focus:outline-none" aria-expanded="false">
                             
                             <h3 class="text-base m-0 text-slate-700 font-medium pr-4 group-hover:text-blue-700 transition-colors">How to Buy a UK eSIM（2026 update）</h3>
-                            <i data-lucide="chevron-down" class="chevron-icon w-5 h-5 text-slate-400 transition-transform duration-300 flex-shrink-0"></i>
+                            <svg class="chevron-icon w-5 h-5 text-slate-400 transition-transform duration-300 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
                         </button>
                         
                         <div class="faq-answer">
@@ -544,7 +541,7 @@
                                     
                                     <a href="/faq/how-to-buy-a-uk-esim" class="inline-flex items-center text-sm font-semibold text-blue-600 hover:text-blue-800 transition-colors">
                                         View Details
-                                        <i data-lucide="arrow-right" class="w-4 h-4 ml-1"></i>
+                                        <svg class="w-4 h-4 ml-1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
                                     </a>
                                 </div>
                             </div>
@@ -555,7 +552,7 @@
                         <button class="faq-toggle w-full flex items-center justify-between p-4 text-left focus:outline-none" aria-expanded="false">
                             
                             <h3 class="text-base m-0 text-slate-700 font-medium pr-4 group-hover:text-blue-700 transition-colors">2026 Best Network Solutions for US Travel (Best eSIM USA)</h3>
-                            <i data-lucide="chevron-down" class="chevron-icon w-5 h-5 text-slate-400 transition-transform duration-300 flex-shrink-0"></i>
+                            <svg class="chevron-icon w-5 h-5 text-slate-400 transition-transform duration-300 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
                         </button>
                         
                         <div class="faq-answer">
@@ -569,7 +566,7 @@
                                     
                                     <a href="/faq/2026-best-esim-options-for-the-usa" class="inline-flex items-center text-sm font-semibold text-blue-600 hover:text-blue-800 transition-colors">
                                         View Details
-                                        <i data-lucide="arrow-right" class="w-4 h-4 ml-1"></i>
+                                        <svg class="w-4 h-4 ml-1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
                                     </a>
                                 </div>
                             </div>
@@ -580,7 +577,7 @@
                         <button class="faq-toggle w-full flex items-center justify-between p-4 text-left focus:outline-none" aria-expanded="false">
                             
                             <h3 class="text-base m-0 text-slate-700 font-medium pr-4 group-hover:text-blue-700 transition-colors">2026 UK Travel Connectivity: eSIM vs Physical SIM Guide</h3>
-                            <i data-lucide="chevron-down" class="chevron-icon w-5 h-5 text-slate-400 transition-transform duration-300 flex-shrink-0"></i>
+                            <svg class="chevron-icon w-5 h-5 text-slate-400 transition-transform duration-300 flex-shrink-0" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></svg>
                         </button>
                         
                         <div class="faq-answer">
@@ -594,7 +591,7 @@
                                     
                                     <a href="/faq/2026-uk-travel-connectivity-esim-vs-physical-sim-guide" class="inline-flex items-center text-sm font-semibold text-blue-600 hover:text-blue-800 transition-colors">
                                         View Details
-                                        <i data-lucide="arrow-right" class="w-4 h-4 ml-1"></i>
+                                        <svg class="w-4 h-4 ml-1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
                                     </a>
                                 </div>
                             </div>
@@ -948,8 +945,6 @@
 </script>
 
 <script>
-    lucide.createIcons();
-
     document.addEventListener('DOMContentLoaded', () => {
         const navItems = document.querySelectorAll('.nav-item');
         const categoryContents = document.querySelectorAll('.faq-category-content');
