@@ -24,4 +24,4 @@ Allow: /
 
 Sitemap: https://www.roamiapp.com/sitemap.xml
 Sitemap: https://www.roamiapp.com/faq/sitemap.xml
-Link: https://www.roamiapp.com/llms.txt; rel="help"
+Sitemap: https://www.roamiapp.com/llms.txt
