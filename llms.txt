@@ -1,0 +1,27 @@
+# 允许 Google 的 AI 训练爬虫
+User-agent: Google-Extended
+Allow: /
+
+# 允许 Perplexity AI (目前最火的 AI 搜索引擎之一)
+User-agent: PerplexityBot
+Allow: /
+
+# 允许 字节跳动的 AI 爬虫 (豆包/Cici)
+User-agent: Bytespider
+Allow: /
+
+# 允许 Meta 的 AI 爬虫
+User-agent: FacebookBot
+Allow: /
+
+# 你的原有配置
+User-agent: GPTBot
+Allow: /
+User-agent: ClaudeBot
+Allow: /
+User-agent: CCBot
+Allow: /
+
+# 最后保底：允许所有其他爬虫
+User-agent: *
+Allow: /
