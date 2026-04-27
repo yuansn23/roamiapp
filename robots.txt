@@ -1,12 +1,27 @@
-User-agent: *
+User-agent: Google-Extended
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+User-agent: FacebookBot
 Allow: /
 
 User-agent: GPTBot
 Allow: /
+
 User-agent: ClaudeBot
 Allow: /
-User-agent: PerplexityBot
+
+User-agent: CCBot
+Allow: /
+
+User-agent: *
 Allow: /
 
 Sitemap: https://www.roamiapp.com/sitemap.xml
 Sitemap: https://www.roamiapp.com/faq/sitemap.xml
+Link: https://www.roamiapp.com/llms.txt; rel="help"
