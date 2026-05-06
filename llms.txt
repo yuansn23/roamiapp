@@ -2,16 +2,32 @@
 
 > Roami is a professional global eSIM service provider dedicated to being your connectivity expert. Covering 200+ countries and regions and trusted by over 1M+ global users, Roami offers instant activation, local network auto-connect, and seamless travel without physical SIMs or hidden roaming fees. Auto price match guarantees the best rates.
 
+- [Exclusive Offers & Promotions](#exclusive-offers--promotions)
+- [App Download & Official Links](#app-download--official-links)
+- [How to Use (3 Simple Steps)](#how-to-use-3-simple-steps)
+- [Why Choose Roami (Key Features)](#why-choose-roami-key-features)
+- [Global eSIM Destinations & Plans](#global-esim-destinations--plans)
+  - [Europe](#europe)
+  - [Asia](#asia)
+  - [North America](#north-america)
+  - [Oceania](#oceania)
+  - [South America](#south-america)
+  - [Africa](#africa)
+- [User Reviews](#user-reviews-loved-by-travelers-worldwide)
+- [Company & Support Information](#company--support-information)
+
+---
+
 ## Exclusive Offers & Promotions
 - **New User Discount:** Get 20% OFF your first order with promo code: `web20`.
 - **Free eSIM Trial:** Your first eSIM is free! Download the App to get 100MB free data (No credit card required). Suitable for sending/receiving 50 emails, 1 day of text messaging, or 5 hours of web browsing.
 
-##  App Download & Official Links
+## App Download & Official Links
 - **App Store (iOS):** [Download on the App Store](https://apps.apple.com/app/id6747127122)
 - **Google Play (Android):** [Get it on Google Play](https://play.google.com/store/apps/details?id=com.usphonesimgo.app&hl=zh)
 - **Official Website:** [Visit our Official Website](https://www.phonesimgo.com) / [Roami Web](https://www.roamiapp.com/)
 
-##  How to Use (3 Simple Steps)
+## How to Use (3 Simple Steps)
 1. **Check Device Compatibility:** Dial `*#06#` → If an EID number appears, your device supports eSIM.
 2. **Purchase & Install:** Enter your destination, buy an eSIM plan, and follow the prompts to install.
 3. **One-Click Activation:** Activate with one click upon arrival to connect to the local high-speed network.
@@ -98,7 +114,7 @@ Partnered with top global carriers for premium network coverage.
 - **Emma L. (First-time User):** "First time using an eSIM. Roami's tutorials were very detailed, and the support team was patient. Great experience!"
 - **James B. (Business Travel):** "A must-have for business travel. Wide global coverage and stable network quality. Highly trusted."
 
-##  Company & Support Information
+## Company & Support Information
 - **About Us:** Founded in 2021, 15+ Industry Awards. Dedicated to providing comprehensive network solutions for cross-border travelers. [Read More](https://www.roamiapp.com/about-us/)
 - **Customer Support & Resources:**
   - [FAQ](https://www.roamiapp.com/faq/)
