@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-us" class="scroll-smooth">
 <head>
-	<meta name="generator" content="Hugo 0.159.1">
+	<meta name="generator" content="Hugo 0.159.1"><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
     <meta charset="UTF-8">
 
 <script type="text/javascript" src="//widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js" async></script>
@@ -35,17 +35,17 @@
 
 
 
-<link rel="canonical" href="https://www.roamiapp.com/">
+<link rel="canonical" href="http://localhost:1313/">
 
 
     
-    <link rel="alternate" hreflang="en" href="https://www.roamiapp.com/">
+    <link rel="alternate" hreflang="en" href="http://localhost:1313/">
     
-    <link rel="alternate" hreflang="de" href="https://www.roamiapp.com/de/">
+    <link rel="alternate" hreflang="de" href="http://localhost:1313/de/">
     
-    <link rel="alternate" hreflang="it" href="https://www.roamiapp.com/it/">
+    <link rel="alternate" hreflang="it" href="http://localhost:1313/it/">
     
-    <link rel="alternate" hreflang="x-default" href="https://www.roamiapp.com/">
+    <link rel="alternate" hreflang="x-default" href="http://localhost:1313/">
 
 	
  
@@ -55,7 +55,7 @@
 <meta property="og:title" content="Instant Global eSIM: Stay Connected in 200&#43; Countries | Roami">
 <meta property="og:description" content="Reliable high-speed internet in 200&#43; destinations. No physical SIM needed. Flexible prepaid plans starting at just $4.50. Download Roami APP now.">
 <meta property="og:type" content="website">
-<meta property="og:url" content="https://www.roamiapp.com/">
+<meta property="og:url" content="http://localhost:1313/">
 <meta property="og:site_name" content="Roami eSIM">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Instant Global eSIM: Stay Connected in 200&#43; Countries | Roami">
@@ -143,8 +143,8 @@
   "@context": "https://schema.org",
   "@type": "Organization",
   "name": "Roami",
-  "url": "https:\/\/www.roamiapp.com\/",
-  "logo": "https:\/\/www.roamiapp.com\/logo.png",
+  "url": "http:\/\/localhost:1313\/",
+  "logo": "http:\/\/localhost:1313\/logo.png",
   "description": "Professional Global eSIM Service Provider offering high-speed data roaming in 200+ countries.",
   "sameAs": [
     "https://apps.apple.com/app/id6747127122",
@@ -505,7 +505,6 @@
 
 <section id="destinations" class="py-24 bg-white">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-
         <div class="text-center mb-12">
             <p class="text-blue-600 text-xs font-bold uppercase tracking-widest mb-3">Global Coverage</p>
             <h2 class="text-3xl md:text-4xl font-bold text-slate-900 mb-4">Top Destinations</h2>
@@ -2452,6 +2451,7 @@
     });
 </script>
 
+
 <div id="redirect-modal" class="fixed inset-0 z-50 hidden flex items-center justify-center bg-slate-900/60 backdrop-blur-sm transition-opacity" aria-modal="true" role="dialog" aria-labelledby="modal-title" aria-describedby="modal-desc">
     <div class="bg-white rounded-2xl p-6 md:p-8 max-w-sm w-full mx-4 shadow-2xl transform scale-95 transition-transform duration-300" id="redirect-modal-content">
         <div class="w-14 h-14 bg-blue-50 text-blue-600 rounded-full flex items-center justify-center mb-5 mx-auto border-4 border-blue-100" aria-hidden="true">
@@ -2460,12 +2460,11 @@
         
         
         <h3 id="modal-title" class="text-xl font-bold text-slate-900 text-center mb-2">Service Updated</h3>
-        <p id="modal-desc" class="text-slate-600 text-center mb-8 text-sm leading-relaxed">Our services have been upgraded. Please visit our official website or APP to get your promo code.</p>
+        <p id="modal-desc" class="text-slate-600 text-center mb-8 text-sm leading-relaxed">You will be redirected to the official app to get the discount code.</p>
         <div class="flex gap-3">
             <button id="modal-cancel-btn" class="flex-1 py-3 px-4 bg-slate-100 hover:bg-slate-200 text-slate-700 text-sm font-semibold rounded-xl transition-colors focus:outline-none focus:ring-2 focus:ring-slate-300">Cancel</button>
             <button id="modal-confirm-btn" class="flex-1 py-3 px-4 bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold rounded-xl transition-colors shadow-md shadow-blue-500/30 focus:outline-none focus:ring-2 focus:ring-blue-500">Proceed</button>
         </div>
-        
         
     </div>
 </div>
@@ -2473,6 +2472,21 @@
 
 <div id="floatingDownloadBtn" class="floating-download-btn">
     <span>✨ Get 20% eSIM Discount ✨</span>
+</div>
+
+
+<div id="customConfirmModal" class="fixed inset-0 z-[100] hidden flex items-center justify-center bg-black/60 backdrop-blur-sm transition-all duration-300" aria-modal="true" role="dialog" aria-labelledby="confirmTitle">
+    <div class="bg-white rounded-2xl p-6 max-w-sm w-full mx-4 shadow-xl transform scale-95 transition-all duration-300" id="customConfirmContent">
+        <div class="w-14 h-14 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center mx-auto mb-4">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="w-7 h-7"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
+        </div>
+        <h3 id="confirmTitle" class="text-xl font-bold text-slate-900 text-center mb-3">Redirection Notice</h3>
+        <p id="confirmMsg" class="text-slate-600 text-center text-sm mb-6">You will be redirected to the official app to get eSIM discount.</p>
+        <div class="flex gap-3">
+            <button id="confirmCancelBtn" class="flex-1 py-2.5 px-4 bg-slate-100 hover:bg-slate-200 text-slate-700 font-medium rounded-xl transition-colors">Cancel</button>
+            <button id="confirmOkBtn" class="flex-1 py-2.5 px-4 bg-blue-600 hover:bg-blue-700 text-white font-medium rounded-xl transition-colors shadow-md shadow-blue-500/30">Continue</button>
+        </div>
+    </div>
 </div>
 
 <script type="application/ld+json">
@@ -2517,7 +2531,7 @@
         z-index: 1000;
         transition: all 0.2s ease;
         text-decoration: none;
-        display: none;  
+        display: none;
         border: none;
         cursor: pointer;
     }
@@ -2526,17 +2540,14 @@
         background: linear-gradient(135deg, #1e40af, #2563eb);
         box-shadow: 0 20px 25px -12px rgba(0, 0, 0, 0.25);
     }
-     
     @media (max-width: 768px) {
         .floating-download-btn {
             display: block;
         }
-         
         body {
             padding-bottom: 80px;
         }
     }
-     
     @media (min-width: 769px) {
         .floating-download-btn {
             display: none;
@@ -2545,35 +2556,25 @@
 </style>
 
 <script>
-    
-    
     document.addEventListener('DOMContentLoaded', function() {
         
         const destTabs = document.querySelectorAll('.tab-btn');
         const destContents = document.querySelectorAll('.tab-content');
-        
-        destContents.forEach(content => {
-            if (!content.classList.contains('active')) {
-                content.style.display = 'none';
-            }
-        });
-
+        destContents.forEach(content => { if (!content.classList.contains('active')) content.style.display = 'none'; });
         destTabs.forEach(tab => {
             tab.addEventListener('click', () => {
                 destTabs.forEach(t => {
                     t.classList.remove('active', 'bg-blue-600', 'text-white', 'shadow-sm');
                     t.classList.add('text-slate-500');
-                    t.setAttribute('aria-selected', 'false'); 
+                    t.setAttribute('aria-selected', 'false');
                 });
                 destContents.forEach(c => {
                     c.classList.remove('active');
                     c.style.display = 'none';
                 });
-                
                 tab.classList.add('active', 'bg-blue-600', 'text-white', 'shadow-sm');
                 tab.classList.remove('text-slate-500');
-                tab.setAttribute('aria-selected', 'true'); 
-                
+                tab.setAttribute('aria-selected', 'true');
                 const targetId = tab.getAttribute('data-target');
                 const targetContent = document.getElementById(targetId);
                 if (targetContent) {
@@ -2583,7 +2584,6 @@
             });
         });
 
-        
         const dlTabs = document.querySelectorAll('.dl-tab-btn');
         const dlContents = document.querySelectorAll('.dl-tab-content');
         dlTabs.forEach(tab => {
@@ -2597,11 +2597,9 @@
                     c.classList.remove('active');
                     c.classList.add('hidden');
                 });
-                
                 tab.setAttribute('aria-selected', 'true');
                 tab.classList.add('text-white', 'border-blue-500');
                 tab.classList.remove('text-slate-400', 'border-transparent');
-                
                 const targetId = tab.getAttribute('data-target');
                 const targetContent = document.getElementById(targetId);
                 if (targetContent) {
@@ -2611,7 +2609,6 @@
             });
         });
 
-        
         const dlTabs2 = document.querySelectorAll('.dl-tab-btn2');
         const dlContents2 = document.querySelectorAll('.dl-tab-content2');
         dlTabs2.forEach(tab => {
@@ -2620,18 +2617,12 @@
                     t.classList.remove('bg-blue-600', 'text-white');
                     t.classList.add('text-slate-400');
                 });
-                dlContents2.forEach(c => {
-                    c.classList.add('hidden');
-                });
-                
+                dlContents2.forEach(c => c.classList.add('hidden'));
                 tab.classList.add('bg-blue-600', 'text-white');
                 tab.classList.remove('text-slate-400');
-                
                 const targetId = tab.getAttribute('data-target');
                 const targetContent = document.getElementById(targetId);
-                if (targetContent) {
-                    targetContent.classList.remove('hidden');
-                }
+                if (targetContent) targetContent.classList.remove('hidden');
             });
         });
 
@@ -2642,44 +2633,34 @@
         const cancelBtn = document.getElementById('modal-cancel-btn');
         const confirmBtn = document.getElementById('modal-confirm-btn');
         let currentTargetHref = '';
-
         function closeModal() {
             modal.classList.add('hidden');
-            modalContent.classList.replace('scale-100', 'scale-95');
+            if (modalContent) modalContent.classList.replace('scale-100', 'scale-95');
         }
-
         function openModal(href) {
             currentTargetHref = href;
             modal.classList.remove('hidden');
             setTimeout(() => {
-                modalContent.classList.replace('scale-95', 'scale-100');
+                if (modalContent) modalContent.classList.replace('scale-95', 'scale-100');
             }, 10);
         }
-
         downloadLinks.forEach(link => {
             link.addEventListener('click', function(e) {
                 e.preventDefault();
                 const href = this.getAttribute('href');
-                if (href) {
-                    openModal(href);
-                }
+                if (href) openModal(href);
             });
         });
-
-        cancelBtn.addEventListener('click', closeModal);
-        
-        modal.addEventListener('click', function(e) {
-            if (e.target === modal) {
-                closeModal();
-            }
-        });
-
-        confirmBtn.addEventListener('click', function() {
-            if (currentTargetHref) {
-                window.open(currentTargetHref, '_blank', 'noopener,noreferrer');
-                closeModal();
-            }
-        });
+        if (cancelBtn) cancelBtn.addEventListener('click', closeModal);
+        if (modal) modal.addEventListener('click', function(e) { if (e.target === modal) closeModal(); });
+        if (confirmBtn) {
+            confirmBtn.addEventListener('click', function() {
+                if (currentTargetHref) {
+                    window.open(currentTargetHref, '_blank', 'noopener,noreferrer');
+                    closeModal();
+                }
+            });
+        }
     });
 </script>
 
@@ -2687,9 +2668,7 @@
   (function(d, w, c) {
     if (w[c]) return;
     var s = d.createElement("script");
-    w[c] = function() {
-      (w[c].z = w[c].z || []).push(arguments);
-    };
+    w[c] = function() { (w[c].z = w[c].z || []).push(arguments); };
     s.async = true;
     s.src = "https://static.ahc.ink/hecong.js";
     if (d.head) d.head.appendChild(s);
@@ -2702,6 +2681,12 @@
     (function() {
         var btn = document.getElementById('floatingDownloadBtn');
         if (!btn) return;
+        
+        var customModal = document.getElementById('customConfirmModal');
+        var confirmOk = document.getElementById('confirmOkBtn');
+        var confirmCancel = document.getElementById('confirmCancelBtn');
+        var redirectUrl = '';
+        
         function getDeviceStoreUrl() {
             var ua = navigator.userAgent || navigator.vendor || window.opera;
             if (/iPad|iPhone|iPod/.test(ua) && !window.MSStream) {
@@ -2712,10 +2697,47 @@
             }
             return 'https://www.phonesimgo.com';
         }
+        
+        function showModal() {
+            redirectUrl = getDeviceStoreUrl();
+            customModal.classList.remove('hidden');
+            var contentDiv = document.getElementById('customConfirmContent');
+            if (contentDiv) {
+                contentDiv.classList.remove('scale-95');
+                contentDiv.classList.add('scale-100');
+            }
+        }
+        
+        function hideModal() {
+            customModal.classList.add('hidden');
+            var contentDiv = document.getElementById('customConfirmContent');
+            if (contentDiv) {
+                contentDiv.classList.remove('scale-100');
+                contentDiv.classList.add('scale-95');
+            }
+        }
+        
         btn.addEventListener('click', function(e) {
             e.preventDefault();
-            var url = getDeviceStoreUrl();
-            window.open(url, '_blank', 'noopener,noreferrer');
+            showModal();
+        });
+        
+        confirmOk.addEventListener('click', function() {
+            if (redirectUrl) {
+                window.open(redirectUrl, '_blank', 'noopener,noreferrer');
+                hideModal();
+            }
+        });
+        
+        confirmCancel.addEventListener('click', function() {
+            hideModal();
+        });
+        
+        
+        customModal.addEventListener('click', function(e) {
+            if (e.target === customModal) {
+                hideModal();
+            }
         });
     })();
 </script>
