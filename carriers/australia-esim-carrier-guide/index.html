@@ -131,29 +131,7 @@
 </style>
 
 
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "Organization",
-  "name": "Roami",
-  "url": "https:\/\/www.roamiapp.com\/",
-  "logo": "https:\/\/www.roamiapp.com\/logo.png",
-  "description": "Professional Global eSIM Service Provider offering high-speed data roaming in 200+ countries.",
-  "sameAs": [
-    "https://apps.apple.com/app/id6747127122",
-    "https://play.google.com/store/apps/details?id=com.usphonesimgo.app"
-  ]
-}
-</script>
 
-
-
-	
-<script>
-    function k2() { window.open('https://apps.apple.com/app/id6747127122', '_blank'); }
-    function k3() { window.open('https://play.google.com/store/apps/details?id=com.usphonesimgo.app&hl=zh', '_blank'); }
-    function k4() { window.open('https://www.phonesimgo.com/', '_blank'); }
-</script>
     <link rel="canonical" href="https://www.roamiapp.com/carriers/australia-esim-carrier-guide/">
     <meta name="robots" content="index, follow">
     
@@ -246,6 +224,45 @@
         .markdown-content a:hover { color: #1d4ed8; text-decoration: underline; text-underline-offset: 2px; }
         .markdown-content table { width: 100%; border-collapse: collapse; margin: 1rem 0; }
         .markdown-content th, .markdown-content td { border: 1px solid #e2e8f0; padding: 0.5rem; }
+
+         
+        html, body {
+            overflow: auto !important;
+            overflow-y: auto !important;
+            overflow-x: hidden !important;
+            height: auto !important;
+            min-height: 100% !important;
+            position: relative !important;
+            -webkit-overflow-scrolling: touch !important;
+        }
+        body {
+            overflow-y: auto !important;
+            overflow-x: hidden !important;
+            height: auto !important;
+            position: static !important;
+        }
+         
+        #content, main, .max-w-7xl, .flex, .lg\:flex-row, .flex-col, .gap-10, .w-full, .flex-1,
+        .relative, .absolute, .bg-slate-50, .bg-white, section, div, article {
+            overflow: visible !important;
+            overflow-x: visible !important;
+            overflow-y: visible !important;
+        }
+         
+        .modal-open, .menu-open, .overflow-hidden {
+            overflow: visible !important;
+        }
+         
+        .fixed, .sticky {
+            pointer-events: auto;
+        }
+         
+        @media (max-width: 1023px) {
+            aside, nav, .toc-link, .region-group, #toc-nav {
+                overflow: visible !important;
+                max-height: none !important;
+            }
+        }
     </style>
 </head>
 <body class="bg-slate-50 text-slate-900 antialiased selection:bg-blue-200 selection:text-blue-900 relative">
@@ -298,8 +315,8 @@
                         </a> 
                         
                         
-                        <a href="/about-us/" class="flex items-center text-slate-500 hover:text-slate-900 text-sm font-medium transition-colors">
-                            <span>About Us</span>
+                        <a href="/app/" class="flex items-center text-slate-500 hover:text-slate-900 text-sm font-medium transition-colors">
+                            <span>Roami APP</span>
                             
                             
                         </a> 
@@ -372,8 +389,8 @@
             </a> 
             
             
-            <a href="/about-us/" class="flex items-center px-3 py-2 text-sm text-slate-600 hover:text-blue-600 rounded-lg hover:bg-slate-50 transition-colors">
-                <span>About Us</span>
+            <a href="/app/" class="flex items-center px-3 py-2 text-sm text-slate-600 hover:text-blue-600 rounded-lg hover:bg-slate-50 transition-colors">
+                <span>Roami APP</span>
                 
             </a> 
             
@@ -918,6 +935,7 @@
 </button>
 
 <script>
+    
     document.addEventListener("DOMContentLoaded", function() {
         const tocLinks = document.querySelectorAll('.toc-link');
         const backToTopBtn = document.getElementById('backToTopBtn');
@@ -969,6 +987,43 @@
         });
         backToTopBtn.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
     });
+</script>
+
+
+<script>
+    (function gentleScrollFix() {
+        
+        function fixScrollLock() {
+            if (document.documentElement && (document.documentElement.style.overflow === 'hidden' || document.documentElement.style.overflowY === 'hidden')) {
+                document.documentElement.style.overflow = '';
+                document.documentElement.style.overflowY = '';
+            }
+            if (document.body && (document.body.style.overflow === 'hidden' || document.body.style.overflowY === 'hidden')) {
+                document.body.style.overflow = '';
+                document.body.style.overflowY = '';
+            }
+            
+            if (document.body && document.body.classList.contains('modal-open')) {
+                document.body.classList.remove('modal-open');
+            }
+        }
+
+        
+        const observer = new MutationObserver((mutations) => {
+            mutations.forEach((mutation) => {
+                if (mutation.attributeName === 'style' || mutation.attributeName === 'class') {
+                    fixScrollLock();
+                }
+            });
+        });
+        if (document.documentElement) observer.observe(document.documentElement, { attributes: true, attributeFilter: ['style', 'class'] });
+        if (document.body) observer.observe(document.body, { attributes: true, attributeFilter: ['style', 'class'] });
+
+        
+        window.addEventListener('load', fixScrollLock);
+        
+        document.addEventListener('touchstart', fixScrollLock, { passive: true });
+    })();
 </script>
 
 
